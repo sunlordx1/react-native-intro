@@ -1,5 +1,5 @@
 <h3 align="center">
-  rn-falcon-app-intro
+ Edited of rn-falcon-app-intro
 </h3>
 
 <p align="center">
