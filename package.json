@@ -1,0 +1,63 @@
+{
+  "_from": "rn-falcon-app-intro",
+  "_id": "rn-falcon-app-intro@1.1.8",
+  "_inBundle": false,
+  "_integrity": "sha512-H+IvnoJMVNoFAoklgLUjHqFv4x4ASyj+OdkkmoQQJvA29IFPs7gv7iimqQcPcxNth/uaUcUQRzcREyQjYDhljg==",
+  "_location": "/rn-falcon-app-intro",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "rn-falcon-app-intro",
+    "name": "rn-falcon-app-intro",
+    "escapedName": "rn-falcon-app-intro",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rn-falcon-app-intro/-/rn-falcon-app-intro-1.1.8.tgz",
+  "_shasum": "8467dec2e0b38bd778a976cc374e69d4f40eb6fa",
+  "_spec": "rn-falcon-app-intro",
+  "_where": "G:\\MJU\\BeautyApp\\get",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Richi2293/rn-falcon-app-intro/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "assign-deep": "^0.4.5",
+    "prop-types": "^15.5.8",
+    "react-native-swiper": "git+https://github.com/Richi2293/react-native-swiper.git"
+  },
+  "deprecated": false,
+  "description": "rn-falcon-app-intro is a react native plugin implementing a parallax effect welcome page using base on react-native-swiper , similar to the one found in Google's app like Sheet, Drive, Docs...",
+  "devDependencies": {
+    "react-test-renderer": "16.6.3"
+  },
+  "homepage": "https://github.com/Richi2293/rn-falcon-app-intro#readme",
+  "keywords": [
+    "swiper",
+    "ProductTour",
+    "App",
+    "Intro",
+    "ios",
+    "android",
+    "react-component",
+    "react-native"
+  ],
+  "license": "ISC",
+  "main": "AppIntro.js",
+  "name": "rn-falcon-app-intro",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richi2293/rn-falcon-app-intro.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.8"
+}
