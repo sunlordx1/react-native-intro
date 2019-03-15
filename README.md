@@ -1,211 +1,341 @@
-<h3 align="center">
- Edited of rn-falcon-app-intro
-</h3>
+> Hi there:
+
+[**头条财经前端团队急招**] 了解团队 / 投简历请联系: 
+
+微信: 103024979 / 邮箱: leecade@163.com
+
+「全新团队, 全新产品, 全新技术栈, 不设技术边界, 不设管理, 不装」
+
+要求: 参考头条面试标准 (重度: `Node` / `RN` / `Vue` / `React` / `微服务` 等技术向)
+
+<img style="float: left" alt="react-native-swiper" src="https://user-images.githubusercontent.com/533360/45361035-c620de00-b603-11e8-9fa7-cb7586e08b66.png" width="150">
+
+----
 
 <p align="center">
-  <a href="https://facebook.github.io/react-native/">React Native</a> component <br/>
-  Implementing a parallax effect welcome page using base on <a href="https://github.com/leecade/react-native-swiper">react-native-swiper</a>, similar to the one found in Google's app like Sheet, Drive, Docs...<br/>
-  This component is based on this no longer followed frequently: <a href="https://github.com/FuYaoDe/react-native-app-intro">react-native-app-intro</a>
+  <img alt="react-native-swiper" src="http://i.imgur.com/P4cRUgD.png" width="208">
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/rn-falcon-app-intro"><img src="https://img.shields.io/npm/v/rn-falcon-app-intro.svg?style=flat-square"></a>
-  <a href="https://www.npmjs.com/package/rn-falcon-app-intro"><img src="https://img.shields.io/npm/dm/rn-falcon-app-intro.svg?style=flat-square"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+  The best Swiper component for React Native.
 </p>
-<br />
 
-# Table of Content
+<p align="center">
+  <a href="http://standardjs.com/"><img alt="JavaScript Style Guide" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"></a>
+  <a href="https://npmjs.org/package/react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/v/react-native-swiper.svg?style=flat-square"></a>
+  <a href="https://npmjs.org/package/react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/dm/react-native-swiper.svg?style=flat-square"></a>
+  <a href="https://github.com/leecade/react-native-swiper/pulls?q=is%3Apr+is%3Aclosed"><img alt="PR Stats" src="https://img.shields.io/issuestats/i/github/leecade/react-native-swiper.svg?style=flat-square"></a>
+  <a href="https://github.com/leecade/react-native-swiper/issues?q=is%3Aissue+is%3Aclosed"><img alt="Issue Stats" src="https://img.shields.io/issuestats/p/github/leecade/react-native-swiper.svg?style=flat-square"></a>
+  <a href="https://gitter.im/leecade/react-native-swiper?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img alt="Join the chat" src="https://badges.gitter.im/leecade/react-native-swiper.svg"></a>
+</p>
 
-1. [Example](#example)
-2. [Installation](#installation)
-3. [Basic Usage](#basic-usage)
-4. [Advanced Usage](#advanced-usage)
-5. [Properties](#properties)
-6. [Contributing](#contributing)
+# react-native-swiper
 
-# Example
+## Roadmap
 
-[Example code](https://github.com/Richi2293/rn-falcon-app-intro/tree/master/Example)
+> see: [ROADMAP.md](ROADMAP.md)
 
-### Support ios and android
-<img src="http://i.giphy.com/3o6ozjLoOnYTXfzJgQ.gif">
+## Changelogs
+- **[1.5.6]**
+  + Fix [#16](https://github.com/leecade/react-native-swiper/issues/16), [#36](https://github.com/leecade/react-native-swiper/issues/36), [#371](https://github.com/leecade/react-native-swiper/issues/371), [#410](https://github.com/leecade/react-native-swiper/issues/410), [#411](https://github.com/leecade/react-native-swiper/issues/411), [#422](https://github.com/leecade/react-native-swiper/issues/422), [#468](https://github.com/leecade/react-native-swiper/issues/468) Fix landscape orientation auto resize! (thanks [@ahmed3mar](https://github.com/ahmed3mar), [@timmywil](https://github.com/timmywil))
+  + Add containerStyle prop to customize the view container.
+  
+- [1.5.5]
+  + Update: using PropTypes from prop-types and Change View.propTypes to ViewPropTypes
+
+
+- [1.5.4]
+  + Added easily accessible pagination point manipulation: use `dotColor` / `activeDotColor` and `dotStyle` / `activeDotStyle` (thanks [@denizs](https://github.com/denizs))
+  + Added scrollEnabled prop to documentation (thanks [@ibandominguez](https://github.com/ibandominguez))
+
+- [1.5.3]
+  + Add loadMinimalLoader prop to customize `<ActivityIndicator />` (thanks [@Exilz](https://github.com/Exilz))
+  + Disable autoplay timer when prop changes to false (thanks [@dizlexik](https://github.com/dizlexik))
+  + Special thanks to [@hypatiah](https://github.com/dizlexik) for fixed some grammatical errors in README
+
+- [1.5.2]
+  + Add yarn lock
+  + Fix jitter when quickly swiping back and forth between pages (iOS) (thanks [@nemophrost](https://github.com/nemophrost))
+  + The first webview always reloaded when injecting the rest of the children (thanks [@eosterberg](https://github.com/eosterberg))
+
+> see more: [CHANGELOG.md](CHANGELOG.md)
+
+## Show Cases
+
+> Try these cases by yourself very easy, Just open `examples/ios/swiper.xcodeproj` in Xcode, then press `Cmd + R`; you may edit `examples/index.ios.js` for switch cases.
+
+### [examples/components/Basic](https://github.com/leecade/react-native-swiper/blob/master/examples/components/Basic)
+
+![](http://i.imgur.com/zrsazAG.gif=300x)
+
+### [examples/components/Swiper](https://github.com/leecade/react-native-swiper/blob/master/examples/components/Swiper)
+
+![](http://i.imgur.com/hP3f3oO.gif=300x)
+
+### [examples/components/SwiperNumber](https://github.com/leecade/react-native-swiper/blob/master/examples/components/SwiperNumber)
+
+![](http://i.imgur.com/0rqESVb.gif=300x)
+
+### [examples/components/Phone](https://github.com/leecade/react-native-swiper/blob/master/examples/components/Phone)
+
+![](http://i.imgur.com/c1BhjZm.gif=300x)
+
+### [examples/components/LoadMinimal](https://github.com/leecade/react-native-swiper/blob/master/examples/components/LoadMinimal)
+
+![](http://i.imgur.com/LAOHbJA.gif=300x)
+
+
+## Getting Started
+
+- [Installation](#installation)
+- [Basic Usage](#basic-usage)
+- [Properties](#properties)
+  + [Basic](#basic)
+  + [Custom basic style & content](#custom-basic-style--content)
+  + [Pagination](#pagination)
+  + [Autoplay](#autoplay)
+  + [Control buttons](#control-buttons)
+  + [Props of Children](#props-of-children)
+  + [Basic props of `<ScrollView />`](#basic-props-of-scrollview-)
+  + [Supported ScrollResponder](#supported-scrollresponder)
+- [Examples](#examples)
+- [Development](#development)
 
 ### Installation
 
 ```bash
-$ npm i rn-falcon-app-intro --save
+$ npm i react-native-swiper --save
 ```
 
 ### Basic Usage
 
-You can use pageArray quick generation your app intro with parallax effect. With the basic usage, the Android status bar will be updated to match your slide background color.
+- Install `react-native` first
 
-<img src="http://i.giphy.com/l3V0khy22aUviTTaM.gif">
-<img src="./assets/sample-android.gif" width="280">
-
-```javascript
-import React, { Component } from 'react';
-import { AppRegistry, Alert } from 'react-native';
-import AppIntro from 'rn-falcon-app-intro';
-
-class Example extends Component {
-  onSkipBtnHandle = (index) => {
-    Alert.alert('Skip');
-    console.log(index);
-  }
-  doneBtnHandle = () => {
-    Alert.alert('Done');
-  }
-  nextBtnHandle = (index) => {
-    Alert.alert('Next');
-    console.log(index);
-  }
-  onSlideChangeHandle = (index, total) => {
-    console.log(index, total);
-  }
-  render() {
-    const pageArray = [{
-      title: 'Page 1',
-      description: 'Description 1',
-      img: 'https://goo.gl/Bnc3XP',
-      imgStyle: {
-        height: 80 * 2.5,
-        width: 109 * 2.5,
-      },
-      backgroundColor: '#fa931d',
-      fontColor: '#fff',
-      level: 10,
-    }, {
-      title: 'Page 2',
-      description: 'Description 2',
-      img: require('../assets/some_image.png'),
-      imgStyle: {
-        height: 93 * 2.5,
-        width: 103 * 2.5,
-      },
-      backgroundColor: '#a4b602',
-      fontColor: '#fff',
-      level: 10,
-    }];
-    return (
-      <AppIntro
-        onNextBtnClick={this.nextBtnHandle}
-        onDoneBtnClick={this.doneBtnHandle}
-        onSkipBtnClick={this.onSkipBtnHandle}
-        onSlideChange={this.onSlideChangeHandle}
-        pageArray={pageArray}
-      />
-    );
-  }
-}
-
-AppRegistry.registerComponent('Example', () => Example);
+```bash
+$ npm i react-native-cli -g
 ```
 
-### Advanced Usage
+- Initialization of a react-native project
 
-If you need customized page like my Example, you can  pass in `View` component into AppIntro component and set level. Remember any need use parallax effect component, Need to be `<View level={10}></View>` inside.
+```bash
+$ react-native init myproject
+```
 
-<img src="http://i.giphy.com/26AHwds1g5HjXrd4s.gif">
+- Then, edit `myproject/index.ios.js`, like this:
 
-```javascript
+```jsx
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
+  View
 } from 'react-native';
-import AppIntro from 'rn-falcon-app-intro';
+
+import Swiper from 'react-native-swiper';
 
 const styles = StyleSheet.create({
-  slide: {
+  wrapper: {
+  },
+  slide1: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#9DD6EB',
-    padding: 15,
+  },
+  slide2: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#97CAE5',
+  },
+  slide3: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#92BBD9',
   },
   text: {
     color: '#fff',
     fontSize: 30,
     fontWeight: 'bold',
-  },
-});
+  }
+})
 
-class Example extends Component {
-
-  render() {
+export default class Swiper extends Component {
+  render(){
     return (
-      <AppIntro>
-        <View style={[styles.slide,{ backgroundColor: '#fa931d' }]}>
-          <View level={10}><Text style={styles.text}>Page 1</Text></View>
-          <View level={15}><Text style={styles.text}>Page 1</Text></View>
-          <View level={8}><Text style={styles.text}>Page 1</Text></View>
+      <Swiper style={styles.wrapper} showsButtons={true}>
+        <View style={styles.slide1}>
+          <Text style={styles.text}>Hello Swiper</Text>
         </View>
-        <View style={[styles.slide, { backgroundColor: '#a4b602' }]}>
-          <View level={-10}><Text style={styles.text}>Page 2</Text></View>
-          <View level={5}><Text style={styles.text}>Page 2</Text></View>
-          <View level={20}><Text style={styles.text}>Page 2</Text></View>
+        <View style={styles.slide2}>
+          <Text style={styles.text}>Beautiful</Text>
         </View>
-        <View style={[styles.slide,{ backgroundColor: '#fa931d' }]}>
-          <View level={8}><Text style={styles.text}>Page 3</Text></View>
-          <View level={0}><Text style={styles.text}>Page 3</Text></View>
-          <View level={-10}><Text style={styles.text}>Page 3</Text></View>
+        <View style={styles.slide3}>
+          <Text style={styles.text}>And simple</Text>
         </View>
-        <View style={[styles.slide, { backgroundColor: '#a4b602' }]}>
-          <View level={5}><Text style={styles.text}>Page 4</Text></View>
-          <View level={10}><Text style={styles.text}>Page 4</Text></View>
-          <View level={15}><Text style={styles.text}>Page 4</Text></View>
-        </View>
-      </AppIntro>
+      </Swiper>
     );
   }
 }
-AppRegistry.registerComponent('Example', () => Example);
+
+AppRegistry.registerComponent('myproject', () => Swiper);
 ```
 
-And in Android, image inside view component, view need width、height.
-```javascript
-<View style={{
-  position: 'absolute',
-  top: 80,
-  left: 30,
-  width: windows.width,
-  height: windows.height,
-}} level={20}
->
-  <Image style={{ width: 115, height: 70 }} source={require('./img/1/c2.png')} />
-</View>
+### Properties
+
+#### Basic
+
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| horizontal | true | `bool` | If `true`, the scroll view's children are arranged horizontally in a row instead of vertically in a column. |
+| loop | true | `bool` | Set to `false` to disable continuous loop mode. |
+| index | 0 | `number` | Index number of initial slide. |
+| showsButtons | false | `bool` | Set to `true` make control buttons visible. |
+| autoplay | false | `bool` | Set to `true` enable auto play mode. |
+| onIndexChanged | (index) => null | `func` | Called with the new index when the user swiped |
+
+#### Custom basic style & content
+
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| width | - | `number` | If no specify default enable fullscreen mode by `flex: 1`. |
+| height | - | `number` | If no specify default fullscreen mode by `flex: 1`. |
+| style | {...} | `style` | See default style in source. |
+| containerStyle | {...} | `style` | See default container style in source. |
+| loadMinimal | false | `bool` | Only load current index slide , `loadMinimalSize` slides before and after. |
+| loadMinimalSize | 1 | `number` | see `loadMinimal`   |
+| loadMinimalLoader | `<ActivityIndicator />` | `element` | Custom loader to display when slides aren't loaded
+
+#### Pagination
+
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| showsPagination | true | `bool` | Set to `true` make pagination visible. |
+| paginationStyle | {...} | `style` | Custom styles will merge with the default styles. |
+| renderPagination | - | `function` | Complete control how to render pagination with three params (`index`, `total`, `context`) ref to `this.state.index` / `this.state.total` / `this`, For example: show numbers instead of dots. |
+| dot | `<View style={{backgroundColor:'rgba(0,0,0,.2)', width: 8, height: 8,borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | `element` | Allow custom the dot element. |
+| activeDot | `<View style={{backgroundColor: '#007aff', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | `element` | Allow custom the active-dot element. |
+| dotStyle | - | `object` | Allow custom the active-dot element. |
+| dotColor | - | `string` | Allow custom the active-dot element. |
+| activeDotColor | - | `string` | Allow custom the active-dot element. |
+| activeDotStyle | - | `object` | Allow custom the active-dot element. |
+
+#### Autoplay
+
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| autoplay | true | `bool` | Set to `true` enable auto play mode. |
+| autoplayTimeout | 2.5 | `number` | Delay between auto play transitions (in second). |
+| autoplayDirection | true | `bool` | Cycle direction control. |
+
+#### Control buttons
+
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| showsButtons | true | `bool` | Set to `true` make control buttons visible. |
+| buttonWrapperStyle | `{backgroundColor: 'transparent', flexDirection: 'row', position: 'absolute', top: 0, left: 0, flex: 1, paddingHorizontal: 10, paddingVertical: 10, justifyContent: 'space-between', alignItems: 'center'}` | `style` | Custom styles. |
+| nextButton | `<Text style={styles.buttonText}>›</Text>` | `element` | Allow custom the next button. |
+| prevButton | `<Text style={styles.buttonText}>‹</Text>` | `element` | Allow custom the prev button. |
+
+#### Props of Children
+
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| style | {...} | `style` | Custom styles will merge with the default styles. |
+| title | {<Text numberOfLines={1}>...</Text>} | `element` | If this parameter is not specified, will not render the title. |
+
+#### Basic props of `<ScrollView />`
+
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| horizontal | true | `bool` | If `true`, the scroll view's children are arranged horizontally in a row instead of vertically in a column. |
+| pagingEnabled | true | `bool` | If true, the scroll view stops on multiples of the scroll view's size when scrolling. This can be used for horizontal pagination.  |
+| showsHorizontalScrollIndicator | false | `bool` | Set to `true` if you want to show horizontal scroll bar. |
+| showsVerticalScrollIndicator | false | `bool` |  Set to `true` if you want to show vertical scroll bar. |
+| bounces | false | `bool` | If `true`, the scroll view bounces when it reaches the end of the content if the content is larger then the scroll view along the axis of the scroll direction. If `false`, it disables all bouncing even if the alwaysBounce* props are true.  |
+| scrollsToTop | false | `bool` | If true, the scroll view scrolls to top when the status bar is tapped.  |
+| removeClippedSubviews | true | `bool` | If true, offscreen child views (whose overflow value is hidden) are removed from their native backing superview when offscreen. This canimprove scrolling performance on long lists.  |
+| automaticallyAdjustContentInsets | false | `bool` | Set to `true` if you need adjust content insets automation. |
+| scrollEnabled | true | `bool` | Enables/Disables swiping |
+
+> @see: http://facebook.github.io/react-native/docs/scrollview.html
+
+#### Supported ScrollResponder
+
+| Prop  | Params  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| onScrollBeginDrag | `e` / `state` / `context` | `function` | When animation begins after letting up |
+| onMomentumScrollEnd | `e` / `state` / `context` | `function` | Makes no sense why this occurs first during bounce |
+| onTouchStartCapture | `e` / `state` / `context` | `function` | Immediately after `onMomentumScrollEnd` |
+| onTouchStart | `e` / `state` / `context` | `function` | Same, but bubble phase |
+| onTouchEnd | `e` / `state` / `context` | `function` | You could hold the touch start for a long time |
+| onResponderRelease | `e` / `state` / `context` | `function` | When lifting up - you could pause forever before * lifting |
+
+> Note: each ScrollResponder be injected with two params: `state` and `context`, you can get `state` and `context`(ref to swiper's `this`) from params, for example:
+
+```jsx
+var swiper = React.createClass({
+  _onMomentumScrollEnd: function (e, state, context) {
+    console.log(state, context.state)
+  },
+  render: function() {
+    return (
+      <Swiper style={styles.wrapper}
+      onMomentumScrollEnd ={this._onMomentumScrollEnd}
+     ...
+      </Swiper>
+    )
+  }
+})
 ```
 
-## **Properties**
-| Prop           | PropType | Default Value           | Description                                                                                                                                                                                                                                                                                                                                                      |
-|----------------|----------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| dotColor       | string   | 'rgba(255,255,255,0.3)' | Bottom of the page dot color                                                                                                                                                                                                                                                                                                                                     |
-| activeDotColor | string   | '#fff'                  | Active page index dot color                                                                                                                                                                                                                                                                                                                                      |
-| rightTextColor | string   | '#fff'                  | The bottom right Text `Done、>` color                                                                                                                                                                                                                                                                                                                            |
-| leftTextColor  | string   | '#fff'                  | The bottom left Text `Skip` color                                                                                                                                                                                                                                                                                                                                |
-| onSlideChange  | (index, total) => {} |                         | function to call when the pages change                                                                                                                                                                                                                                                                                                                           |
-| onSkipBtnClick | (index) => {}     |                         | function to call when the Skip button click                                                                                                                                                                                                                                                                                                                      |
-| onDoneBtnClick | func     |                         | function to call when the Done button click                                                                                                                                                                                                                                                                                                                      |
-| onNextBtnClick | (index) => {}     |                         | function to call when the Next '>' button click                                                                                                                                                                                                                                                                                                                  |
-| doneBtnLabel   | string、Text element  |  Done                   | The bottom right custom Text label                                                                                                                                                                                                                                                                                                                   |
-| skipBtnLabel   | string、Text element  |  Skip                   | The bottom left custom Text label                                                                                                                                                                                                                                                                                                                  |
-| nextBtnLabel   | string、Text element   |  ›                      | The bottom left custom Text label                                                                                                                                                                                                                                                                                                                  |
-| pageArray      | array    |                         | In the basic usage, you can input object array to render basic view example: ```[[{title: 'Page 1', description: 'Description 1', img: 'https://goo.gl/uwzs0C', imgStyle: {height: 80 * 2.5, width: 109 * 2.5 }, backgroundColor: '#fa931d', fontColor: '#fff', level: 10 }]``` , level is parallax effect level ,if you use pageArray you can't use custom view |
-| defaultIndex | number   | 0 | number of the index of the initial index |
-| showSkipButton | bool | true | a boolean defining if we should render the skip button |
-| showDoneButton | bool | true | a boolean that defines if we should render the done button |
-| showDots | bool | true | a boolean that defines if we should render the bottom dots |
-| scrollEnabled | bool | true | a boolean that defines if swiping is enabled or disabled |
+> More ScrollResponder info, see: https://github.com/facebook/react-native/blob/master/Libraries/Components/ScrollResponder.js
 
-##### **Children View Properties**
-| Prop  | PropType | Default Value | Description           |
-|-------|----------|---------------|-----------------------|
-| level | number   |               | parallax effect level |
+### Methods
 
-# Contributing
+#### scrollBy(index, animated)
 
-Pull requests are always welcome! Feel free to open a new GitHub issue for any changes that can be made.
+Scroll by relative index.
+
+Parameters:
+
+| Name  | Type     | default | Description |
+| :---- | :------: | :------: | :--- |
+| index | `number`   | `undefined` | offset index |
+| animated | `bool`   | `true` | offset index |
+
+### Examples
+
+```bash
+$ cd examples
+$ npm i
+$ react-native run-ios
+```
+
+> Quick start with [examples](https://github.com/leecade/react-native-swiper/tree/master/examples/).
+
+### Development
+
+```bash
+$ cd examples
+$ npm i
+$ npm run dev
+$ react-native run-ios
+```
+
+Then launch simulator to preview. Note that you just need to edit the source file `src/index.js`, the change will auto sync to examples.
+
+And now that this project follows the [standard](https://github.com/feross/standard) code style, you'd better prepare it for IDE.
+
+## Contribution
+
+- [@leecade](mailto:leecade@163.com) The main author.
+- [@rajkissu](mailto:rajkissu@gmail.com) The secondary contributor.
+
+## Questions
+
+Feel free to [contact me](mailto:leecade@163.com) or [create an issue](https://github.com/leecade/react-native-swiper/issues/new)
+
+> Inspired by [nolimits4web/Swiper](https://github.com/nolimits4web/swiper/) & Design material from [Dribbble](https://dribbble.com/) & made with ♥.
